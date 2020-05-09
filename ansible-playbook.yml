@@ -1,0 +1,7 @@
+---
+  - name: Creating docker containers.
+    hosts: local
+    gather_facts: no
+    tasks:
+      - name: Running script file inside ansible container.
+        shell: /root/docker-loop.sh
