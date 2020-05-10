@@ -1,6 +1,6 @@
 ---
   - name: Creating docker containers.
-    hosts: local
+    hosts: localhost
     gather_facts: no
     tasks:
       - name: Running script file inside ansible container.
