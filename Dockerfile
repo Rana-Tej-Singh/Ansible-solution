@@ -3,12 +3,12 @@ FROM ubuntu
 
 USER root
 RUN apt-get update -y && \
-    apt-get install docker.io ansible -y
+    apt-get install docker* ansible -y
 
 RUN sleep 2
 
 COPY . /root/
-COPY ansible-playbook.yml hosts /etc/ansible/
+COPY ansible-playbook.yml /etc/ansible/
 
 WORKDIR /root/
 
